@@ -4,7 +4,7 @@
 \alias{fisheye}
 \title{fisheye}
 \usage{
-fisheye(x, centre, method, k = 2)
+fisheye(x, centre, method = "log", k = 1)
 }
 \arguments{
 \item{x}{an sf object (POINT, LINESTRING, MULTILINESTRING, POLYGON,
@@ -16,8 +16,8 @@ must use the same projection as x.}
 
 \item{method}{transfomation method, either 'log' or 'sqrt'. See Details.}
 
-\item{k}{integer, factor to adjust the log transformation, higher values soften the
-deformation. See Details.}
+\item{k}{integer, factor to adjust the log transformation, higher values
+soften the deformation. See Details.}
 }
 \value{
 A transformed sf object is returned.

@@ -12,8 +12,8 @@
 #' @param centre an sf object, the center of the transformation. This object
 #' must use the same projection as x.
 #' @param method transfomation method, either 'log' or 'sqrt'. See Details.
-#' @param k integer, factor to adjust the log transformation, higher values soften the
-#' deformation. See Details.
+#' @param k integer, factor to adjust the log transformation, higher values
+#' soften the deformation. See Details.
 #'
 #' @details
 #' The 'log' method transforms distances to \code{center} with:
@@ -36,7 +36,10 @@
 #' ncfe <- fisheye(nc, centre = nc[100, ], method = 'log', k = 4)
 #' plot(st_geometry(ncfe), col = "grey70", lwd = .2)
 #' plot(st_geometry(ncfe[100,]), col = NA, lwd = 2, border = "red", add = TRUE)
-fisheye <- function(x, centre, method, k = 2){
+fisheye <- function(x, centre, method = "log", k = 1){
+
+
+
 
   # center geometries around center
   centre <- st_coordinates(st_centroid(st_geometry(centre)))
@@ -44,10 +47,14 @@ fisheye <- function(x, centre, method, k = 2){
   geom <- geom - c(centre[1], centre[2])
   pts <- st_coordinates(geom)
 
+
+
+
   # original distance
   dist <- sqrt((pts[,"X"]^2) + (pts[,"Y"]^2))
   # angle
   ta <- atan(pts[,"Y"] / pts[,"X"])
+
 
   # modified distances
   if (method == 'sqrt'){
@@ -63,8 +70,11 @@ fisheye <- function(x, centre, method, k = 2){
 
   # get new coordinates
   sx <- sign(pts[,"X"])
+  sx[sx==0] <- 1
   pts[,"X"] <- d * cos(ta) * sx
   pts[,"Y"] <- d * sin(ta) * sx
+
+
 
   # asigned new coordinates
   gtype <- st_geometry_type(x, by_geometry = FALSE)
