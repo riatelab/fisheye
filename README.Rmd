@@ -1,31 +1,32 @@
-
+---
+output: github_document
+---
 # fisheye
+
 
 ![R-CMD-check](https://github.com/riatelab/fisheye/workflows/R-CMD-check/badge.svg)
 [![codecov](https://codecov.io/gh/riatelab/fisheye/branch/main/graph/badge.svg?token=JANE4FTX8D)](https://codecov.io/gh/riatelab/fisheye)
 
+
+
+
 ![](hager.png)
 
-D’après Bunge 1962 p. 54 :
+D'après Bunge 1962 p. 54 : 
 
-Bunge, W. (1962) Theoretical Geography, Lund Studies in Geography
-General and Mathematical Geography No. 1, Department of Geography,
-University of Lund, Lund.
+Bunge, W. (1962) Theoretical Geography, Lund Studies in Geography General and Mathematical
+Geography No. 1, Department of Geography, University of Lund, Lund.
 
-D’après :
+D'après : 
 
-Hägerstrand, T. (1957) Migration and Area: A Survey of a Sample of
-Swedish Migration Fields and Hypothetical Considerations of the Genesis,
-Lund Studies in Geography, Series B, Human Geography, Department of
-Geography, University of Lund, Lund.
+Hägerstrand, T. (1957) Migration and Area: A Survey of a Sample of Swedish Migration Fields and
+Hypothetical Considerations of the Genesis, Lund Studies in Geography, Series B, Human Geography,
+Department of Geography, University of Lund, Lund.
 
-``` r
+
+
+```{r}
 library(sf)
-```
-
-    ## Linking to GEOS 3.9.0, GDAL 3.2.2, PROJ 7.1.0
-
-``` r
 library(fisheye)
 library(mapsf)
 
@@ -55,11 +56,8 @@ mf_map(center, pch = 20, add = TRUE)
 for (i in c(20, 30)){
   text(st_coordinates(center)[1,1], st_bbox(buf[i, ])[4], paste0(round(buf_size[i]/1000, 0),  "km"))
 }
-```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
-``` r
 buffe <- fisheye(buf, centre = center, method = "log", k = 1)
 ncfe  <- fisheye(nc, centre = center, method = "log", k = 1)
 mf_init(buffe)
@@ -70,8 +68,16 @@ points(0,0,pch = 20)
 for (i in c(1,10,20,30)){
   text(0, st_bbox(buffe[i, ])[4], paste0(signif(buf_size[i]/1000, 0),  "km"))
 }
+
+
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
+
+
+
+
+
+
+
 
 ![](figures/fig2/New.gif)
