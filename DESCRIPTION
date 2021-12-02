@@ -8,8 +8,8 @@ Authors@R: c(person("Timothée", "Giraud",
              person(given = "Luc",
                     family = "Guibard",
                     role = c("aut")))
-Description: Base maps are transformed to focus on a point on the map using coordinates
-    tranformation, currrently sqrt and log methods are available.
+Description: Base maps are transformed to focus on a specific location using an
+    azimuthal logarithmic distance transformation.
 License: GPL-3
 Depends: 
     R (>= 3.5.0)
