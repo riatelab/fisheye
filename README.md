@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 
+![CRAN version](https://www.r-pkg.org/badges/version-ago/fisheye)
 ![R-CMD-check](https://github.com/riatelab/fisheye/workflows/R-CMD-check/badge.svg)
 [![codecov](https://codecov.io/gh/riatelab/fisheye/branch/main/graph/badge.svg)](https://app.codecov.io/gh/riatelab/fisheye?branch=main)
 
@@ -13,10 +14,17 @@ location using an azimuthal logarithmic distance transformation.
 
 ## Installation
 
-You can install the development version of fisheye from GitHub with:
+You can install the released version of `fisheye` from
+[CRAN](https://cran.r-project.org/package=fisheye) with:
 
 ``` r
-# install.packages("remotes")
+install.packages("fisheye")
+```
+
+Alternatively, you can install the development version of `fisheye` from
+GitHub with:
+
+``` r
 remotes::install_github("riatelab/fisheye")
 ```
 
