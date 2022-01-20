@@ -107,7 +107,8 @@ for (i in c(1,10,20,30)){
 
 ```
 
-See a more detailed example [here](https://rcarto.github.io/fisheye-example/):  
+See a more detailed example [here](https://github.com/rcarto/fisheye-example/): 
+
 ![](https://raw.githubusercontent.com/rCarto/fisheye-example/main/gif/mob.gif)
 
 ## References

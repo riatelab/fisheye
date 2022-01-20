@@ -56,7 +56,8 @@ mf_title("Log-Azimuthal Projection")
 <img src="man/figures/README-example2-1.png" width="100%" />
 
 See a more detailed example
-[here](https://rcarto.github.io/fisheye-example/):  
+[here](https://github.com/rcarto/fisheye-example/):
+
 ![](https://raw.githubusercontent.com/rCarto/fisheye-example/main/gif/mob.gif)
 
 ## References
