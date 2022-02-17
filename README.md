@@ -1,5 +1,5 @@
 
-# fisheye
+# fisheye <img src="man/figures/logo.png" align="right" width="140"/>
 
 <!-- badges: start -->
 
