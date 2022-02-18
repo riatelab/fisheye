@@ -10,6 +10,8 @@ Authors@R: c(person("Timothée", "Giraud",
                     role = c("aut")))
 Description: Base maps are transformed to focus on a specific location using an
     azimuthal logarithmic distance transformation.
+URL: https://github.com/riatelab/fisheye
+BugReports: https://github.com/riatelab/fisheye/issues
 License: GPL-3
 Depends: 
     R (>= 3.5.0)
