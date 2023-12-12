@@ -1,0 +1,94 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "fisheye",
+  "description": "Base maps are transformed to focus on a specific location using an azimuthal logarithmic distance transformation.",
+  "name": "fisheye: Transform Base Maps Using Log-Azimuthal Projection",
+  "codeRepository": "https://github.com/riatelab/fisheye",
+  "issueTracker": "https://github.com/riatelab/fisheye/issues",
+  "license": "https://spdx.org/licenses/GPL-3.0",
+  "version": "0.2.0",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 4.3.2 (2023-10-31)",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Comprehensive R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Timothée",
+      "familyName": "Giraud",
+      "email": "timothee.giraud@cnrs.fr",
+      "@id": "https://orcid.org/0000-0002-1932-3323"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Luc",
+      "familyName": "Guibard"
+    }
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Timothée",
+      "familyName": "Giraud",
+      "email": "timothee.giraud@cnrs.fr",
+      "@id": "https://orcid.org/0000-0002-1932-3323"
+    }
+  ],
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "covr",
+      "name": "covr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=covr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tinytest",
+      "name": "tinytest",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=tinytest"
+    }
+  ],
+  "softwareRequirements": {
+    "1": {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 3.5.0"
+    },
+    "2": {
+      "@type": "SoftwareApplication",
+      "identifier": "sf",
+      "name": "sf",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=sf"
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "11.175KB"
+}

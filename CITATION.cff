@@ -1,0 +1,80 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.5.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "fisheye" in publications use:'
+type: software
+license: GPL-3.0-only
+title: 'fisheye: Transform Base Maps Using Log-Azimuthal Projection'
+version: 0.2.0
+abstract: Base maps are transformed to focus on a specific location using an azimuthal
+  logarithmic distance transformation.
+authors:
+- family-names: Giraud
+  given-names: Timothée
+  email: timothee.giraud@cnrs.fr
+  orcid: https://orcid.org/0000-0002-1932-3323
+- family-names: Guibard
+  given-names: Luc
+repository: https://CRAN.R-project.org/package=fisheye
+repository-code: https://github.com/riatelab/fisheye
+url: https://github.com/riatelab/fisheye
+contact:
+- family-names: Giraud
+  given-names: Timothée
+  email: timothee.giraud@cnrs.fr
+  orcid: https://orcid.org/0000-0002-1932-3323
+keywords:
+- map
+- r
+- spatial
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2023'
+  institution:
+    name: R Foundation for Statistical Computing
+  version: '>= 3.5.0'
+- type: software
+  title: sf
+  abstract: 'sf: Simple Features for R'
+  notes: Imports
+  url: https://r-spatial.github.io/sf/
+  repository: https://CRAN.R-project.org/package=sf
+  authors:
+  - family-names: Pebesma
+    given-names: Edzer
+    email: edzer.pebesma@uni-muenster.de
+    orcid: https://orcid.org/0000-0001-8049-7069
+  year: '2023'
+- type: software
+  title: covr
+  abstract: 'covr: Test Coverage for Packages'
+  notes: Suggests
+  url: https://covr.r-lib.org
+  repository: https://CRAN.R-project.org/package=covr
+  authors:
+  - family-names: Hester
+    given-names: Jim
+    email: james.f.hester@gmail.com
+  year: '2023'
+- type: software
+  title: tinytest
+  abstract: 'tinytest: Lightweight and Feature Complete Unit Testing Framework'
+  notes: Suggests
+  url: https://github.com/markvanderloo/tinytest
+  repository: https://CRAN.R-project.org/package=tinytest
+  authors:
+  - family-names: van der Loo
+    given-names: Mark
+    email: mark.vanderloo@gmail.com
+    orcid: https://orcid.org/0000-0002-9807-4686
+  year: '2023'

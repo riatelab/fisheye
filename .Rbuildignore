@@ -4,3 +4,5 @@
 ^\.github$
 figures
 ^README\.Rmd$
+^CITATION\.cff$
+^codemeta\.json$
