@@ -14,3 +14,20 @@ of Swedish Migration Fields and Hypothetical Considerations of their Genesis.
 Lund Studies in Geography, Series B, Human Geography, Department of
 Geography, University of Lund, Lund.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/riatelab/fisheye}
+  \item Report bugs at \url{https://github.com/riatelab/fisheye/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Timothée Giraud \email{timothee.giraud@cnrs.fr} (\href{https://orcid.org/0000-0002-1932-3323}{ORCID})
+
+Authors:
+\itemize{
+  \item Luc Guibard
+}
+
+}

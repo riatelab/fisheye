@@ -1,6 +1,6 @@
 Package: fisheye
 Title: Transform Base Maps Using Log-Azimuthal Projection
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(person("Timothée", "Giraud",
                     email = "timothee.giraud@cnrs.fr", 
                     role = c("cre","aut"), 
@@ -18,7 +18,7 @@ Depends:
 Imports: 
     sf
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Suggests: 
     covr, 
     tinytest

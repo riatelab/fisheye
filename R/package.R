@@ -7,5 +7,4 @@
 #' of Swedish Migration Fields and Hypothetical Considerations of their Genesis.
 #' Lund Studies in Geography, Series B, Human Geography, Department of
 #' Geography, University of Lund, Lund.
-#' @docType package
-NULL
+"_PACKAGE"
