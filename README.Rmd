@@ -21,6 +21,12 @@ knitr::opts_chunk$set(
 
 The goal of fisheye is to create base maps focusing on a specific location using an azimuthal logarithmic distance transformation.
 
+
+<img src="man/figures/fig.jpg" width="350"/>    
+
+<small>John Bachmann, [New York and environs](https://digitalcollections.nypl.org/items/510d47e3-b9bd-a3d9-e040-e00a18064a99), 1859.</small> 
+
+
 ## Installation
 
 You can install the released version of `fisheye` from
